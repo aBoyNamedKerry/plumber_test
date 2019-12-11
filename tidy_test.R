@@ -36,3 +36,7 @@ function(spec){
  print(myplot)
  
 }
+
+## for making api live run
+# pr <- plumber::plumb("tidy_test.R")
+#
