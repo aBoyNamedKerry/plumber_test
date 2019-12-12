@@ -2,7 +2,7 @@
 library(ggplot2)
 library(rjson)
 #' Show iris data as JSON and filter
-#' @param spec
+#' @param spec # if provided will filter data on a species type.
 #' @get /data
 function(spec){
   myData <- iris
@@ -39,4 +39,4 @@ function(spec){
 
 ## for making api live run
 # pr <- plumber::plumb("tidy_test.R")
-#
+# pr$run(port = 8000)
